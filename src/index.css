@@ -7,6 +7,33 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #c9f7ff;
+  color: #216a81;
+  background-image: url(./images/back-mobile.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+@media screen and (min-width: 425px) {
+  body {
+    background-image: url(./images/back-tablet.jpeg);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    background-image: url(./images/back-desktop.jpeg);
+    background-position: right bottom;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    body {
+      background-image: url(./images/back-desktop-2x.jpeg);
+    }
+  }
 }
 
 code {
